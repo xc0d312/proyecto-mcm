@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+.wrapper{
+   
+    position: relative;
+    background: url(/img/undraw_mathematics_4otb.svg) no-repeat;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+}
+
+.main-panel{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+ padding-top: 80px;
+ 
+ 
+}
+.content{
+    height: 90%;
+   display: flex;
+   justify-content: center;
+}
+
+.card-header{
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+}
+
+.card-operaciones{
+    display: flex;
+    height: 100%;
+    flex-flow: wrap;
+   justify-content: center;
+    align-items: center;
+  
+}.card-txt1{
+    position: relative;
+   display: flex;
+   justify-content: center;
+    align-items: center;
+}.card-txt1 ::after{
+    content: '';
+    position: absolute;
+    width: 65%;
+    height: 1px;
+    background: grey;
+    bottom: 0px;
+    left: 70px;
+   
+}.card-txt2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   position: relative;
+   
+   
+}.card-txt2::after{
+    content: '';
+    width: 65%;
+    height: 1px;
+    background: grey;
+    position: absolute;
+    bottom: 0px;
+    left: 70px;
+}
+.card-txt1 input{
+   width: 70%;
+   outline: none;
+   border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 8px;
+    color: #1E1E2F;
+    font-weight: bold;
+    background: transparent;
+    outline: none;
+    
+}.card-txt2 input{
+     width: 70%;
+     outline: none;
+     border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 8px;
+    color: #1E1E2F;
+    background: transparent;
+    
+}.form{
+    background: white;
+    opacity: 90%;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, .5);
+    border-radius: 7px;
+    height: 60%;
+    width: 90%;
+ 
+}
+.card-btn input{
+    margin :50px 0 50px 0;
+    background:  #1E1E2F;
+    padding: 10px;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0px 20px 0 20px;
+    color: white;
+    outline: none;
+}
+.card-btn input:hover{
+    background-color: #27293D;
+    cursor: pointer;
+}
+.warning{
+    font-weight: bold;
+    color: tomato;
+    text-transform: uppercase;
+}
+@media screen and (max-width:800px){
+    .card-operaciones{
+        flex-flow: column;
+    }
+} 
